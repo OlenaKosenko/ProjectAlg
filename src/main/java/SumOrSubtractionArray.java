@@ -16,9 +16,10 @@ public class SumOrSubtractionArray {
     public int sumOrSubtractionArray(int n) {
         int result = 1;
 
-        if (n == 1) {
+/*        if (n == 1) {
             return result;
-        } else if (n > 1) {
+        } else */
+        if (n > 1) {
             for (int i = 2; i <= n; i++) {
                 result += i;
             }

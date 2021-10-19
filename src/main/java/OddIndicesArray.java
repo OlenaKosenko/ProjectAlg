@@ -9,11 +9,11 @@ public class OddIndicesArray {
      */
     public int[] oddIndicesArray(int[] array) {
         int[] newArray = new int[array.length / 2];
-        int number = 1;
+        int j = 1;
 
         for (int i = 0; i < newArray.length; i++) {
-            newArray[i] = array[number];
-            number += 2;
+            newArray[i] = array[j];
+            j += 2;
         }
 
         return newArray;
