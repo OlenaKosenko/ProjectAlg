@@ -1,14 +1,16 @@
 public class SmallestDifference {
 
-    /*    Написать алгоритм SmallestDifference, который принимает на вход массив целых чисел
-    и возвращает ту пару чисел, абсолютная разница между которыми наименьшая
-
-    Test Data:
-    Input = {8, 5, 2, 0, 9, 12, 8}
-    Expected Result =  {9, 8}
-
-    Input = {8, -55, 2, -54, -12}
-    Expected Result =  {-55, -54}*/
+    /*
+     * Написать алгоритм SmallestDifference, который принимает на вход массив целых чисел
+     * и возвращает ту пару чисел, абсолютная разница между которыми наименьшая
+     *
+     * Test Data:
+     * Input = {8, 5, 2, 0, 9, 12, 8}
+     * Expected Result =  {9, 8}
+     *
+     * Input = {8, -55, 2, -54, -12}
+     * Expected Result =  {-55, -54}
+     */
 
     public int[] smallestDifference(int[] array) {
 
