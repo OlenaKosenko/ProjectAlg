@@ -53,9 +53,8 @@ public class SmallestDifferenceTest {
         int[] expectedResult = {8, 100};
 
         SmallestDifference smallestDifference = new SmallestDifference();
-        int[] actualResult = smallestDifference.smallestDifference(input);
 
-        Assert.assertArrayEquals(expectedResult, actualResult);
+        Assert.assertArrayEquals(expectedResult, smallestDifference.smallestDifference(input));
     }
 
 }

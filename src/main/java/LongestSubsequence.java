@@ -9,7 +9,16 @@ public class LongestSubsequence {
     Expected Result = {1, 1, 1}
 
     Input = {1, 0, 1, 1, 0, 1}
-    Expected Result = {1, 1}*/
+    Expected Result = {1, 1}
+
+    Input = {1, 0, 0, 0, 1, 1, 0, 1}
+    Expected Result = {1, 1}
+    */
+
+    /*
+    Написать метод, который принимает на вход массив любых чисел и
+    возвращает саммую длинную последовательность числа
+    */
 
     public int[] longestSubsequence(int[] array) {
         int number = array[0];

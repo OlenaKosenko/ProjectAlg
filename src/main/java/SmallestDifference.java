@@ -14,7 +14,7 @@ public class SmallestDifference {
 
     public int[] smallestDifference(int[] array) {
 
-        if (array.length == 2) {
+        if (array.length == 0 || array.length == 1 || array.length == 2) {
             return array;
         }
 
@@ -28,8 +28,8 @@ public class SmallestDifference {
 
                 if (absDifference < minDifference) {
                     minDifference = absDifference;
-                    newArray = new int[]{array[i], array[j]};
-
+                    newArray[0] = array[i];
+                    newArray[1] = array[j];
                 }
             }
         }

@@ -13,14 +13,27 @@ public class ZeroSum {
         int[] newArray = new int[2];
 
         for (int i = 0; i < array.length - 1; i++) {
-            for (int j = i + i; j < array.length; j++)
+            for (int j = i + 1; j < array.length; j++)
                 if (array[i] + array[j] == 0) {
-                    newArray = new int[]{array[i], array[j]};
+                    newArray[0] = array[i];
+                    newArray[1] = array[j];
                     break;
                 }
         }
 
         return newArray;
+    }
+
+    public int[] zeroSum2(int[] array) {
+
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = i + 1; j < array.length; j++)
+                if (array[i] + array[j] == 0) {
+                    return new int[]{array[i], array[j]};
+                }
+        }
+
+        return new int[1];
     }
 
 

@@ -32,5 +32,4 @@ public class CompareArraysTest {
 
         Assert.assertFalse(compareArrays.areArraysEqual(inputArray1, inputArray2));
     }
-
 }

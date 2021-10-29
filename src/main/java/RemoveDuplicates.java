@@ -31,7 +31,6 @@ public class RemoveDuplicates {
             }
         }
 
-        System.out.println(list);
         return list;
     }
 }
