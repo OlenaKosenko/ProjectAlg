@@ -11,18 +11,6 @@ public class DeleteSpaceChangeToLowerCase {
      */
 
     public String deleteSpaceChangeToLowerCase(String str) {
-        String result = "";
-
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) != ' ') {
-                result += str.toLowerCase(Locale.ROOT).charAt(i);
-            }
-        }
-
-        return result;
-    }
-
-    public StringBuilder deleteSpaceChangeToLowerCase2(String str) {
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {
@@ -31,6 +19,6 @@ public class DeleteSpaceChangeToLowerCase {
             }
         }
 
-        return result;
+        return result.toString();
     }
 }

@@ -35,4 +35,38 @@ public class DeleteSpaceChangeToUpperCaseTest {
 
         Assert.assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void testDeleteSpaceChangeToUpperCaseFour() {
+        String input = "     ";
+        String expectedResult = "";
+
+        DeleteSpaceChangeToUpperCase deleteSpaceChangeToUpperCase = new DeleteSpaceChangeToUpperCase();
+        String actualResult = deleteSpaceChangeToUpperCase.deleteSpaceChangeToUpperCase(input);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testDeleteSpaceChangeToUpperCaseFive() {
+        String input = "";
+        String expectedResult = "";
+
+        DeleteSpaceChangeToUpperCase deleteSpaceChangeToUpperCase = new DeleteSpaceChangeToUpperCase();
+        String actualResult = deleteSpaceChangeToUpperCase.deleteSpaceChangeToUpperCase(input);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testDeleteSpaceChangeToUpperCaseSix() {
+        String input = "  p   p ";
+        String expectedResult = "P P";
+
+        DeleteSpaceChangeToUpperCase deleteSpaceChangeToUpperCase = new DeleteSpaceChangeToUpperCase();
+        String actualResult = deleteSpaceChangeToUpperCase.deleteSpaceChangeToUpperCase(input);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
 }

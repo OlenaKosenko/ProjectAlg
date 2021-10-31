@@ -10,21 +10,6 @@ public class ChangeZeroToO {
 
     public String changeZeroToO(String str) {
 
-        String result = "";
-
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == '0') {
-                result += "o";
-            } else {
-                result += str.charAt(i);
-            }
-        }
-
-        return result;
-    }
-
-    public StringBuilder changeZeroToO2(String str) {
-
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {
@@ -35,8 +20,6 @@ public class ChangeZeroToO {
             }
         }
 
-        return result;
+        return result.toString();
     }
-
-
 }

@@ -19,7 +19,4 @@ public class CountSpace {
         }
        return count;
     }
-
-
-
 }
