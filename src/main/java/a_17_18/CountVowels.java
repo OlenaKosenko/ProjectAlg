@@ -1,3 +1,5 @@
+package a_17_18;
+
 import java.util.Locale;
 
 public class CountVowels {

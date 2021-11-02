@@ -1,3 +1,5 @@
+package a_17_18;
+
 import java.util.Locale;
 
 public class DeleteSpaceChangeToLowerCase {
@@ -11,6 +13,23 @@ public class DeleteSpaceChangeToLowerCase {
      */
 
     public String deleteSpaceChangeToLowerCase(String str) {
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != ' ') {
+                if (str.charAt(i) > 64 && str.charAt(i) < 91) {
+                    result.append((char) (str.charAt(i) + 32));
+                } else {
+                    result.append(str.charAt(i));
+                }
+            }
+        }
+
+        return result.toString();
+    }
+
+    public String deleteSpaceChangeToLowerCaseTwo(String str) {
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {

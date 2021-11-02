@@ -1,3 +1,5 @@
+package a_17_18;
+
 public class DeleteSpaceChangeToUpperCase {
 
     /*
@@ -10,7 +12,7 @@ public class DeleteSpaceChangeToUpperCase {
 
     public String deleteSpaceChangeToUpperCase(String str) {
 
-        if (str.length() == 0) {
+        if (str == null || str.length() == 0) {
             return "";
         }
 
@@ -48,8 +50,6 @@ public class DeleteSpaceChangeToUpperCase {
 
         return result.toString();
     }
-
-
 
 
     public String deleteSpaceChangeToUpperCaseTwo(String str) {

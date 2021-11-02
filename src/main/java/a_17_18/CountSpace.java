@@ -1,3 +1,5 @@
+package a_17_18;
+
 public class CountSpace {
 
     /*
@@ -11,12 +13,16 @@ public class CountSpace {
 
     public int countSpace(String str) {
 
+        if (str == null || str.length() == 0) {
+            return 0;
+        }
+
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
-            if(str.charAt(i) == ' ') {
+            if (str.charAt(i) == ' ') {
                 count++;
             }
         }
-       return count;
+        return count;
     }
 }

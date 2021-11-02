@@ -1,3 +1,5 @@
+package a_17_18;
+
 public class ChangeZeroToO {
 
     /*

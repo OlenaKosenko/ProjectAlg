@@ -1,3 +1,5 @@
+package a_17_18;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,7 +19,8 @@ public class IntegerArray {
 
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) > 47 && str.charAt(i) < 58) {
-                list.add(Character.getNumericValue(str.charAt(i)));
+                //list.add(Character.getNumericValue(str.charAt(i)));
+                list.add(str.charAt(i) - 48);
             }
         }
 

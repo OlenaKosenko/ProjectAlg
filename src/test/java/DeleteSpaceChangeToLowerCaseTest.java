@@ -1,3 +1,4 @@
+import a_17_18.DeleteSpaceChangeToLowerCase;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -25,5 +26,26 @@ public class DeleteSpaceChangeToLowerCaseTest {
         Assert.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testDeleteSpaceChangeToLowerCaseThree() {
+        String input =  "  ";
+        String expectedResult = "";
+
+        DeleteSpaceChangeToLowerCase deleteSpaceChangeToLowerCase = new DeleteSpaceChangeToLowerCase();
+        String actualResult = deleteSpaceChangeToLowerCase.deleteSpaceChangeToLowerCase(input);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testDeleteSpaceChangeToLowerCaseFour() {
+        String input =  "";
+        String expectedResult = "";
+
+        DeleteSpaceChangeToLowerCase deleteSpaceChangeToLowerCase = new DeleteSpaceChangeToLowerCase();
+        String actualResult = deleteSpaceChangeToLowerCase.deleteSpaceChangeToLowerCase(input);
+
+        Assert.assertEquals(expectedResult, actualResult);
+    }
 
 }

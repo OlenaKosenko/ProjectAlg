@@ -1,3 +1,4 @@
+import a_17_18.CountVowels;
 import org.junit.Assert;
 import org.junit.Test;
 
