@@ -18,5 +18,4 @@ public class MaxMinWordTest {
 
         Assert.assertEquals(expectedResult, actualResult);
     }
-
 }

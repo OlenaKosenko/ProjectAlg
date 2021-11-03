@@ -26,9 +26,7 @@ public class MaxMinWord {
         for (int i = 0; i < str.length(); i++) {
             if ((str.charAt(i) >= 'A' && str.charAt(i) <= 'Z') || (str.charAt(i) >= 'a' && str.charAt(i) <= 'z')) {
                 word.append(str.charAt(i));
-
             } else {
-
                 if (word.length() > maxLength) {
                     maxLength = word.length();
                     maxLengthWord = word.toString();
@@ -37,11 +35,9 @@ public class MaxMinWord {
                     minLength = word.length();
                     minLengthWord = word.toString();
                 }
-
                 word.setLength(0);
             }
         }
-
         result.add(minLengthWord);
         result.add(maxLengthWord);
 
