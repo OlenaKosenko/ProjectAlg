@@ -25,7 +25,7 @@ public class Anagram11 {
 
         for (int i = 0; i < str1.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
-                if (str1.toLowerCase(Locale.ROOT).charAt(i) == str2.toLowerCase(Locale.ROOT).charAt(j)) {
+                if (str1.toLowerCase().charAt(i) == str2.toLowerCase().charAt(j)) {
                     isSymbolPresent = true;
                     break;
                 }
@@ -40,6 +40,4 @@ public class Anagram11 {
 
         return true;
     }
-
-
 }

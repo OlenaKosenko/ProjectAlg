@@ -16,13 +16,21 @@ public class AddStringNTimes {
 
         StringBuilder result = new StringBuilder();
 
-        for (int i = 0; i < n ; i++) {
+        for (int i = 0; i < n; i++) {
             result.append(str);
         }
 
         //result.append(String.valueOf(str).repeat(Math.max(0, n)));
 
-        System.out.println(result);
         return result.length();
+    }
+
+    public void addStringNTimes2(String str, int n) {
+
+        if (n >= 1 && str.length() > 0) {
+
+            str = str.repeat(n);
+            System.out.println(str + " " + str.length());
+        }
     }
 }

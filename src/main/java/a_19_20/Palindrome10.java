@@ -29,8 +29,7 @@ public class Palindrome10 {
     public boolean isPalindrome(String str) {
 
         for (int i = 0; i < str.length() / 2; i++) {
-            if (str.toLowerCase(Locale.ROOT).charAt(i)
-                    != str.toLowerCase(Locale.ROOT).charAt(str.length() - (i + 1))) {
+            if (str.toLowerCase().charAt(i) != str.toLowerCase().charAt(str.length() - (i + 1))) {
                 return false;
             }
         }

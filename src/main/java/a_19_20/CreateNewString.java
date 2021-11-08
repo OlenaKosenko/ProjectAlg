@@ -20,13 +20,13 @@ public class CreateNewString {
             return false;
         }
 
-        StringBuilder str0 = new StringBuilder(str1.toLowerCase(Locale.ROOT));
+        StringBuilder str0 = new StringBuilder(str1.toLowerCase());
 
         boolean isSymbolPresent = false;
 
         for (int i = 0; i < str2.length(); i++) {
             for (int j = 0; j < str0.length(); j++) {
-                if (str2.toLowerCase(Locale.ROOT).charAt(i) == str0.charAt(j)) {
+                if (str2.toLowerCase().charAt(i) == str0.charAt(j)) {
                     isSymbolPresent = true;
                     str0.deleteCharAt(j);
                     break;

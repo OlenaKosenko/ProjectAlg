@@ -13,7 +13,6 @@ public class UniqueLetters {
 
     public String uniqueLetters(String str) {
 
-
         StringBuilder result = new StringBuilder();
         boolean isElementPresent = false;
 

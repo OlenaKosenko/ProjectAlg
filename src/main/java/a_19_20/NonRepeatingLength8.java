@@ -44,6 +44,7 @@ public class NonRepeatingLength8 {
         return maxLength;
     }
 
+
     public String maxSubstring(String str) {
 
         StringBuilder subString = new StringBuilder();

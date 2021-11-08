@@ -8,12 +8,12 @@ public class GenerateRandomLetters14And15 {
      * случайных букв русского алфавита.
      */
 
-    public static String generateRandomRussianLetters() {
+    public static String generateRandomRussianLetters(int n) {
 
         StringBuilder result = new StringBuilder();
-        int length = (int) ((Math.random() * 100) + 1); //from 1 to 100
+        /* int length = (int) ((Math.random() * 100) + 1); //from 1 to 100*/
 
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < n; i++) {
             result.append((char) ((Math.random() * 32) + 1072)); // from 1072 to 1103
         }
 
@@ -40,7 +40,7 @@ public class GenerateRandomLetters14And15 {
 
     public static void main(String[] args) {
 
-        System.out.println(generateRandomRussianLetters());
+        System.out.println(generateRandomRussianLetters(15));
         System.out.println(generateRandomEnglishLetters());
     }
 
